@@ -1,7 +1,7 @@
 const taskInput = document.getElementById('taskInput');
 const taskList = document.getElementById('taskList');
 
-const API_URL = 'http://44.201.219.64:5000/tasks';
+const API_URL = 'http://44.201.219.64:5000/api/tasks';
 
 // Fetch and render tasks on page load
 window.onload = () => {

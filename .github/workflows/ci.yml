@@ -34,7 +34,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: 🐳 Build Docker image
-        run: docker build -t sarath2105/task-manager:latest -f backend/Dockerfile .
+        run: docker build -t sarath2105/task-manager:latest backend -f backend/Dockerfile 
 
       - name: 📤 Push Docker image
         run: docker push sarath2105/task-manager:latest
